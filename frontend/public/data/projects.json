@@ -1,0 +1,131 @@
+[
+  {
+    "slug": "zencart",
+    "title": "ZenCart",
+    "shortDescription": "Enterprise e-commerce backend architecture built with Java 17, Spring Boot 3.4.2, and Spring Security.",
+    "longDescription": "ZenCart is a robust, enterprise-grade e-commerce backend architecture. It features structured domain modeling, relational persistence through Spring Data JPA, and security layers built with Spring Security. The system architecture includes logical data models (logicalmodel.drawio) and layered enterprise patterns for product catalogs, cart management, and order processing.",
+    "techStack": [
+      "Java 17",
+      "Spring Boot 3.4.2",
+      "Spring Data JPA",
+      "Spring Security",
+      "MySQL",
+      "Lombok",
+      "Maven"
+    ],
+    "images": [
+      "/images/projects/zencart-arch.svg"
+    ],
+    "repoUrl": "https://github.com/karabocodes/ZenCart",
+    "repoIsPublic": true,
+    "highlights": [
+      "Designed logical relational data model for e-commerce catalog and checkout workflows",
+      "Implemented Spring Data JPA repositories with MySQL integration",
+      "Configured Spring Security filter chains for secure endpoint protection",
+      "Adopted Lombok annotation processing to maintain clean, readable domain entities"
+    ],
+    "challenges": [
+      "Balancing relational entity integrity with performant database queries",
+      "Structuring authentication and role-based authorization for multi-endpoint protection"
+    ],
+    "decisions": [
+      "Selected Spring Boot 3.4.2 to leverage modern Java 17 language features",
+      "Separated domain models from persistence layer using JPA repository abstractions"
+    ]
+  },
+  {
+    "slug": "sukuma",
+    "title": "sukuma Fleet Services",
+    "shortDescription": "Dynamic transport and fleet management showcase platform built with Angular 20 standalone architecture.",
+    "longDescription": "A high-performance modern web application built for Sukuma Fleet Services in Gauteng. Engineered using Angular 20 with standalone components, CSS3 keyframe animations, and modular sections for services, values, company overview, and interactive contact navigation.",
+    "techStack": [
+      "Angular 20",
+      "TypeScript 5.8",
+      "Standalone Components",
+      "CSS3 Animations",
+      "Responsive Layout"
+    ],
+    "images": [
+      "/images/projects/sukuma-hero.svg"
+    ],
+    "repoUrl": "https://github.com/karabocodes/sukuma",
+    "repoIsPublic": true,
+    "highlights": [
+      "Architected with Angular 20 standalone component paradigm without NgModule overhead",
+      "Built dynamic CSS scroll and keyframe animations for transport vehicle iconography",
+      "Implemented responsive modular layout covering company values, fleet services, and inquiry workflows"
+    ],
+    "challenges": [
+      "Delivering smooth CSS keyframe animations across diverse mobile viewports",
+      "Maintaining clean component isolation with inline styling tokens"
+    ],
+    "decisions": [
+      "Used Angular standalone components for streamlined bundle size and tree-shaking",
+      "Organized features into isolated domain directories (hero, services, values, contact)"
+    ]
+  },
+  {
+    "slug": "avatarun",
+    "title": "Avatarun",
+    "shortDescription": "Interactive 3D WebGL avatar lip-sync application with Three.js, React Three Fiber, and Vite.",
+    "longDescription": "Avatarun is an interactive 3D WebGL experience combining React Three Fiber, Three.js, and audio-driven lip synchronization via the Rhubarb Lip Sync engine. Built with Vite for rapid development and optimized asset pipelines.",
+    "techStack": [
+      "React 18",
+      "Three.js",
+      "React Three Fiber (R3F)",
+      "@react-three/drei",
+      "Vite",
+      "Leva",
+      "WebGL"
+    ],
+    "images": [
+      "/images/projects/avatarun-3d.svg"
+    ],
+    "repoUrl": "https://github.com/karabocodes/Avatarun",
+    "repoIsPublic": true,
+    "highlights": [
+      "Rendered real-time 3D humanoid avatar models within the browser canvas",
+      "Integrated phoneme-to-viseme mapping via Rhubarb Lip Sync for realistic facial animation",
+      "Configured Leva dynamic debug controls for real-time 3D lighting and camera manipulation"
+    ],
+    "challenges": [
+      "Managing 3D asset memory consumption and smooth framerates in WebGL",
+      "Synchronizing audio timing curves with morph target animation tracks"
+    ],
+    "decisions": [
+      "Adopted React Three Fiber declarative scene graph over imperative Three.js loops",
+      "Used Vite as the build bundler for rapid hot module replacement of 3D shaders"
+    ]
+  },
+  {
+    "slug": "nedbank-clone",
+    "title": "Nedbank Mobile Clone",
+    "shortDescription": "Native iOS digital banking interface clone developed in Swift with Xcode and Auto Layout.",
+    "longDescription": "A native iOS application engineered in Swift and Xcode, replicating core digital banking interfaces. Emphasizes clean iOS design guidelines, native navigation controllers, secure financial presentation patterns, and pixel-accurate component rendering.",
+    "techStack": [
+      "Swift",
+      "iOS",
+      "Xcode",
+      "UIKit / SwiftUI",
+      "Auto Layout",
+      "Mobile Architecture"
+    ],
+    "images": [
+      "/images/projects/nedbank-ios.svg"
+    ],
+    "repoUrl": "https://github.com/karabocodes/NedbankClone",
+    "repoIsPublic": true,
+    "highlights": [
+      "Constructed native iOS layout adhering to Apple Human Interface Guidelines (HIG)",
+      "Implemented structured banking account overview and transactional card UI",
+      "Maintained modular Xcode workspace structure for scalable view controllers"
+    ],
+    "challenges": [
+      "Replicating complex banking UI states across multiple iOS device form factors",
+      "Ensuring visual hierarchy while maintaining strict contrast for financial data"
+    ],
+    "decisions": [
+      "Built natively in Swift to maximize performance and iOS platform consistency"
+    ]
+  }
+]
