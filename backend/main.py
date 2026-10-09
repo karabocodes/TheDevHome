@@ -7,13 +7,14 @@ from prompt import build_system_prompt
 from adapters.base import LLMAdapter
 from adapters.ollama_adapter import OllamaAdapter
 from adapters.anthropic_adapter import AnthropicAdapter
+from adapters.gemini_adapter import GeminiAdapter
 
 load_dotenv()
 
 app = FastAPI(
-    title="TheDevHome Chatbot API",
-    description="Secure LLM Backend Proxy for Karabo Khunou Developer Portfolio",
-    version="1.0.0"
+    title="KNT Software Solutions API",
+    description="Enterprise LLM Technical Advisory Assistant for KNT Software Solutions",
+    version="2.0.0"
 )
 
 # CORS configuration to allow Angular development server
@@ -33,8 +34,10 @@ app.add_middleware(
 )
 
 def get_adapter() -> LLMAdapter:
-    provider = os.getenv("LLM_PROVIDER", "ollama").lower()
-    if provider == "anthropic":
+    provider = os.getenv("LLM_PROVIDER", "gemini").lower()
+    if provider == "gemini":
+        return GeminiAdapter()
+    elif provider == "anthropic":
         return AnthropicAdapter()
     return OllamaAdapter()
 

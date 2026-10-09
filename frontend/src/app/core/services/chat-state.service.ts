@@ -20,7 +20,7 @@ export class ChatStateService {
   readonly messages = signal<ChatMessage[]>([
     {
       role: 'assistant',
-      content: "Hello! I'm the portfolio assistant for Karabo Khunou. Ask me anything about Karabo's engineering background, Spring Boot backend systems, Angular applications, or 3D WebGL projects.",
+      content: "Welcome to KNT Software Solutions. I am your technical advisory assistant. Ask me anything about our enterprise backend architectures, distributed systems, reactive web engineering, native iOS platforms, or our founding partners (Karabo Khunou and leadership team).",
       timestamp: Date.now()
     }
   ]);
@@ -39,7 +39,7 @@ export class ChatStateService {
             ...msgs,
             {
               role: 'system',
-              content: `Switched context to: ${current.title}. Ask questions specific to this project's architecture, dependencies, or challenges.`,
+              content: `Switched context to KNT Case Study: ${current.title}. Ask questions specific to our architectural decisions, tech stack, or engineering challenges on this deliverable.`,
               timestamp: Date.now()
             }
           ]);
@@ -48,7 +48,7 @@ export class ChatStateService {
             ...msgs,
             {
               role: 'system',
-              content: 'Returned to Portfolio Home (Global Context).',
+              content: 'Returned to KNT Corporate Overview (Global Context).',
               timestamp: Date.now()
             }
           ]);
@@ -100,9 +100,9 @@ export class ChatStateService {
         this.status.set('error');
         this.lastFailedMessage.set(trimmed);
         
-        let errorText = 'Unable to reach the assistant service. Please check your connection or verify the Python server is running.';
+        let errorText = 'Unable to reach the KNT technical advisory service. Please check your connection or verify the Python server is running.';
         if (err.status === 504 || err.name === 'TimeoutError') {
-          errorText = 'The AI model timed out. The local model may be compiling or generating a large response.';
+          errorText = 'The AI advisory model timed out. The local model may be compiling or generating a large response.';
         } else if (err.error?.detail) {
           errorText = err.error.detail;
         }
@@ -125,7 +125,7 @@ export class ChatStateService {
     this.messages.set([
       {
         role: 'assistant',
-        content: "Conversation history cleared. How can I help you explore Karabo's engineering portfolio?",
+        content: "Conversation history cleared. How can I assist you with KNT Software Solutions' engineering practices, case studies, or leadership?",
         timestamp: Date.now()
       }
     ]);

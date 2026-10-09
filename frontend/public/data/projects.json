@@ -1,9 +1,9 @@
 [
   {
     "slug": "zencart",
-    "title": "ZenCart",
+    "title": "ZenCart Enterprise Architecture",
     "shortDescription": "Enterprise e-commerce backend architecture built with Java 17, Spring Boot 3.4.2, and Spring Security.",
-    "longDescription": "ZenCart is a robust, enterprise-grade e-commerce backend architecture. It features structured domain modeling, relational persistence through Spring Data JPA, and security layers built with Spring Security. The system architecture includes logical data models (logicalmodel.drawio) and layered enterprise patterns for product catalogs, cart management, and order processing.",
+    "longDescription": "ZenCart is a high-volume, enterprise-grade e-commerce backend architecture engineered by KNT. Designed for transactional reliability and clean domain boundaries, it features structured relational domain modeling, relational persistence through Spring Data JPA, and zero-compromise security layers built with Spring Security. The system architecture includes logical data models (logicalmodel.drawio) and layered enterprise patterns for product catalogs, cart management, and order processing workflows.",
     "techStack": [
       "Java 17",
       "Spring Boot 3.4.2",
@@ -19,25 +19,25 @@
     "repoUrl": "https://github.com/karabocodes/ZenCart",
     "repoIsPublic": true,
     "highlights": [
-      "Designed logical relational data model for e-commerce catalog and checkout workflows",
-      "Implemented Spring Data JPA repositories with MySQL integration",
-      "Configured Spring Security filter chains for secure endpoint protection",
-      "Adopted Lombok annotation processing to maintain clean, readable domain entities"
+      "Engineered logical relational data model for high-integrity e-commerce catalog and checkout workflows",
+      "Implemented Spring Data JPA repositories with performance-tuned MySQL query integration",
+      "Configured robust Spring Security filter chains for multi-endpoint role protection",
+      "Adopted Lombok annotation processing to maintain clean, maintainable domain entities"
     ],
     "challenges": [
-      "Balancing relational entity integrity with performant database queries",
+      "Balancing relational entity integrity with high-throughput database query efficiency",
       "Structuring authentication and role-based authorization for multi-endpoint protection"
     ],
     "decisions": [
-      "Selected Spring Boot 3.4.2 to leverage modern Java 17 language features",
+      "Selected Spring Boot 3.4.2 to leverage modern Java 17 runtime performance and language features",
       "Separated domain models from persistence layer using JPA repository abstractions"
     ]
   },
   {
     "slug": "sukuma",
-    "title": "sukuma Fleet Services",
+    "title": "sukuma Fleet Logistics",
     "shortDescription": "Dynamic transport and fleet management showcase platform built with Angular 20 standalone architecture.",
-    "longDescription": "A high-performance modern web application built for Sukuma Fleet Services in Gauteng. Engineered using Angular 20 with standalone components, CSS3 keyframe animations, and modular sections for services, values, company overview, and interactive contact navigation.",
+    "longDescription": "A high-performance modern web application engineered by KNT for Sukuma Fleet Services in Gauteng. Architected using Angular 20 with standalone components, CSS3 keyframe animations, and modular enterprise sections for services, corporate values, transport logistics overview, and interactive contact navigation.",
     "techStack": [
       "Angular 20",
       "TypeScript 5.8",
@@ -56,8 +56,8 @@
       "Implemented responsive modular layout covering company values, fleet services, and inquiry workflows"
     ],
     "challenges": [
-      "Delivering smooth CSS keyframe animations across diverse mobile viewports",
-      "Maintaining clean component isolation with inline styling tokens"
+      "Delivering smooth 60fps CSS keyframe animations across diverse mobile viewports",
+      "Maintaining clean component isolation with strict design system styling tokens"
     ],
     "decisions": [
       "Used Angular standalone components for streamlined bundle size and tree-shaking",
@@ -66,9 +66,9 @@
   },
   {
     "slug": "avatarun",
-    "title": "Avatarun",
+    "title": "Avatarun 3D WebGL Engine",
     "shortDescription": "Interactive 3D WebGL avatar lip-sync application with Three.js, React Three Fiber, and Vite.",
-    "longDescription": "Avatarun is an interactive 3D WebGL experience combining React Three Fiber, Three.js, and audio-driven lip synchronization via the Rhubarb Lip Sync engine. Built with Vite for rapid development and optimized asset pipelines.",
+    "longDescription": "Avatarun is a cutting-edge interactive 3D WebGL platform developed by KNT, combining React Three Fiber, Three.js, and audio-driven lip synchronization via the Rhubarb Lip Sync engine. Built with Vite for rapid development and optimized asset pipelines, delivering realistic 3D avatar animation directly in modern web browsers.",
     "techStack": [
       "React 18",
       "Three.js",
@@ -84,12 +84,12 @@
     "repoUrl": "https://github.com/karabocodes/Avatarun",
     "repoIsPublic": true,
     "highlights": [
-      "Rendered real-time 3D humanoid avatar models within the browser canvas",
+      "Rendered real-time 3D humanoid avatar models within the browser canvas with zero plugin requirements",
       "Integrated phoneme-to-viseme mapping via Rhubarb Lip Sync for realistic facial animation",
       "Configured Leva dynamic debug controls for real-time 3D lighting and camera manipulation"
     ],
     "challenges": [
-      "Managing 3D asset memory consumption and smooth framerates in WebGL",
+      "Managing 3D asset memory consumption and smooth framerates in WebGL contexts",
       "Synchronizing audio timing curves with morph target animation tracks"
     ],
     "decisions": [
@@ -99,9 +99,9 @@
   },
   {
     "slug": "nedbank-clone",
-    "title": "Nedbank Mobile Clone",
+    "title": "Nedbank Mobile Banking Suite",
     "shortDescription": "Native iOS digital banking interface clone developed in Swift with Xcode and Auto Layout.",
-    "longDescription": "A native iOS application engineered in Swift and Xcode, replicating core digital banking interfaces. Emphasizes clean iOS design guidelines, native navigation controllers, secure financial presentation patterns, and pixel-accurate component rendering.",
+    "longDescription": "A native iOS application engineered by KNT in Swift and Xcode, replicating institutional digital banking interfaces. Emphasizes clean iOS Human Interface Guidelines, native navigation controllers, secure financial presentation patterns, and pixel-accurate component rendering.",
     "techStack": [
       "Swift",
       "iOS",
@@ -116,7 +116,7 @@
     "repoUrl": "https://github.com/karabocodes/NedbankClone",
     "repoIsPublic": true,
     "highlights": [
-      "Constructed native iOS layout adhering to Apple Human Interface Guidelines (HIG)",
+      "Constructed native iOS layout adhering strictly to Apple Human Interface Guidelines (HIG)",
       "Implemented structured banking account overview and transactional card UI",
       "Maintained modular Xcode workspace structure for scalable view controllers"
     ],

@@ -1,0 +1,170 @@
+{
+  "name": "KNT Software Solutions",
+  "shortName": "KNT",
+  "tagline": "Enterprise Software Engineering & Distributed Systems Architecture",
+  "badge": "KNT Software Consultancy • Accepting Enterprise Engagements",
+  "heroHeading": "Engineering Mission-Critical Software Systems & Digital Platforms",
+  "heroSubheading": "KNT is a premier technology consultancy founded by Karabo Khunou, Nqobile Buthelezi, and Tebogo Mkhize. We architect enterprise-grade distributed backends, resilient cloud infrastructure, high-performance web systems, and native mobile applications engineered for institutional scale.",
+  "about": "Founded by senior software engineers Karabo Khunou, Nqobile Buthelezi, and Tebogo Mkhize, KNT delivers uncompromising technical excellence. From domain-driven enterprise Spring Boot architectures to cloud infrastructure, reactive Angular frontends, 3D WebGL computing, and native iOS banking platforms, we build systems that endure real-world load and scale.",
+  "stats": [
+    {
+      "value": "3",
+      "label": "Founding Partners",
+      "detail": "Karabo Khunou • Nqobile Buthelezi • Tebogo Mkhize"
+    },
+    {
+      "value": "99.99%",
+      "label": "Architecture Reliability",
+      "detail": "High-availability system benchmarks"
+    },
+    {
+      "value": "4+",
+      "label": "Core Practice Areas",
+      "detail": "Backend, Cloud, Web, and Native Mobile"
+    },
+    {
+      "value": "100%",
+      "label": "Engineering Integrity",
+      "detail": "Production-tested zero-compromise codebases"
+    }
+  ],
+  "partners": [
+    {
+      "id": "karabo-khunou",
+      "initial": "K",
+      "name": "Karabo Khunou",
+      "role": "Partner & Principal Systems Architect",
+      "bio": "Leads enterprise backend architecture, distributed microservices, and database systems. Brings deep expertise in Java 17, Spring Boot 3.4, transactional integrity, and scalable cloud APIs.",
+      "specialties": [
+        "Enterprise Backend Architecture",
+        "Spring Boot 3.4 & Java 17",
+        "Relational Data Modeling & JPA",
+        "High-Concurrency Microservices"
+      ],
+      "github": "https://github.com/karabocodes",
+      "email": "karabo@knt-solutions.com"
+    },
+    {
+      "id": "nqobile-buthelezi",
+      "initial": "N",
+      "name": "Nqobile Buthelezi",
+      "role": "Partner & Head of Cloud Strategy & Infrastructure",
+      "bio": "Directs cloud infrastructure, system reliability, and enterprise modernization. Specializes in scalable cloud topologies, CI/CD automation pipelines, security compliance, and robust DevOps foundations.",
+      "specialties": [
+        "Cloud Infrastructure & DevOps",
+        "System Reliability & Scalability",
+        "Enterprise Security & Governance",
+        "Automated CI/CD Pipelines"
+      ],
+      "github": "https://github.com/karabocodes",
+      "email": "nqobile@knt-solutions.com"
+    },
+    {
+      "id": "tebogo-mkhize",
+      "initial": "T",
+      "name": "Tebogo Mkhize",
+      "role": "Partner & Director of Mobile & Digital Platforms",
+      "bio": "Drives native mobile engineering and high-fidelity client digital experiences. Expert in Swift/iOS architectures, human interface guidelines, interactive 3D WebGL, and responsive web systems.",
+      "specialties": [
+        "Native iOS & Swift Engineering",
+        "Enterprise UI/UX Design Systems",
+        "Interactive 3D WebGL / Three.js",
+        "Client Platform Integrations"
+      ],
+      "github": "https://github.com/karabocodes",
+      "email": "tebogo@knt-solutions.com"
+    }
+  ],
+  "services": [
+    {
+      "id": "enterprise-backend",
+      "title": "Enterprise Backend & Distributed Architecture",
+      "description": "High-throughput APIs, microservice ecosystems, and robust domain modeling built with modern Java and Spring Boot. We deliver secure, fault-tolerant transactional backends designed for enterprise volume.",
+      "deliverables": [
+        "Java 17 & Spring Boot 3.4.2 microservices",
+        "Domain-driven design & logical relational data modeling",
+        "Spring Security filter chains & token authentication",
+        "Relational database optimization (MySQL, PostgreSQL, JPA)"
+      ]
+    },
+    {
+      "id": "cloud-infrastructure",
+      "title": "Cloud Infrastructure, DevOps & Reliability",
+      "description": "Resilient cloud environments, zero-downtime containerized architectures, and automated CI/CD deployment pipelines engineered to ensure 99.99% operational continuity.",
+      "deliverables": [
+        "Cloud architecture (AWS / GCP / Hybrid)",
+        "Infrastructure as Code & container orchestration",
+        "Automated CI/CD build & test delivery pipelines",
+        "Enterprise security governance & compliance auditing"
+      ]
+    },
+    {
+      "id": "web-engineering",
+      "title": "Modern Web Platforms & Design Systems",
+      "description": "Enterprise-grade single-page applications engineered with Angular standalone architecture, TypeScript, and modern CSS. Fast, accessible, and resilient frontends that streamline complex client workflows.",
+      "deliverables": [
+        "Angular 20 standalone component architectures",
+        "Fine-grained reactive state management with signals",
+        "Responsive, high-contrast design systems & UI/UX tokens",
+        "SEO, accessibility, and Core Web Vitals optimization"
+      ]
+    },
+    {
+      "id": "interactive-3d",
+      "title": "Interactive 3D WebGL & Spatial Computing",
+      "description": "Browser-based 3D graphics, simulation environments, and audio-synchronized interactive experiences powered by Three.js and React Three Fiber without bulky external plugins.",
+      "deliverables": [
+        "Real-time WebGL rendering & 3D model pipelines",
+        "Custom shaders, camera controllers & lighting scenes",
+        "Audio-to-viseme lip-sync engines & avatar rigs",
+        "Interactive product configurators & simulation tools"
+      ]
+    },
+    {
+      "id": "native-mobile",
+      "title": "Native iOS & Digital Banking Engineering",
+      "description": "Institutional-grade native mobile applications crafted in Swift with strict adherence to Apple Human Interface Guidelines, financial data protection, and offline reliability.",
+      "deliverables": [
+        "Native Swift development for iOS",
+        "Pixel-accurate banking & transactional interfaces",
+        "Auto Layout & multi-device adaptive view hierarchies",
+        "Offline caching, security controls & biometric authentication"
+      ]
+    },
+    {
+      "id": "technical-advisory",
+      "title": "Architecture Audits & Technical Advisory",
+      "description": "Comprehensive engineering assessments for CTOs, product leaders, and investors. We identify bottlenecks, resolve tech-debt vulnerabilities, and establish sustainable architectural roadmaps.",
+      "deliverables": [
+        "Deep-dive codebase, security & scalability audits",
+        "Database performance & query optimization reviews",
+        "DevOps, automated CI/CD & infrastructure pipelines",
+        "Technology selection & architectural decision documentation"
+      ]
+    }
+  ],
+  "engagementModels": [
+    {
+      "title": "Dedicated Technical Pod",
+      "description": "Our senior partners and engineers integrate directly with your organization to lead end-to-end architecture and rapid implementation.",
+      "bestFor": "Enterprises scaling new core products or replacing legacy platforms."
+    },
+    {
+      "title": "Architectural Advisory & Sprint",
+      "description": "Focused high-impact advisory engagement to audit architecture, design data models, or solve critical performance and security hurdles.",
+      "bestFor": "Teams preparing for scale, audits, or major system upgrades."
+    },
+    {
+      "title": "Turnkey Solution Delivery",
+      "description": "From requirement scoping to production deployment, KNT delivers complete, tested, and documented software systems ready for operational handoff.",
+      "bestFor": "Organizations needing a specialized, reliable engineering partner."
+    }
+  ],
+  "contact": {
+    "email": "consult@knt-solutions.com",
+    "directEmail": "karabo@knt-solutions.com",
+    "location": "Johannesburg / Pretoria, Gauteng • Remote Global",
+    "githubOrg": "https://github.com/karabocodes",
+    "availability": "Available for Select Enterprise Engagements"
+  }
+}

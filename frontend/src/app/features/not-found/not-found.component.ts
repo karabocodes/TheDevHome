@@ -15,14 +15,14 @@ import { RouterModule } from '@angular/router';
         Lost in the Architecture?
       </h1>
       <p class="mt-4 max-w-md text-surface-400 text-base leading-relaxed">
-        The route you are trying to access does not exist in this developer portfolio.
+        The route you are trying to access does not exist on the KNT Software Solutions portal.
       </p>
       <div class="mt-8">
         <a
           routerLink="/"
           class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-brand-600 hover:bg-brand-500 text-white font-medium text-sm transition-colors shadow-lg shadow-brand-500/10 focus:ring-2 focus:ring-brand-500"
         >
-          &larr; Back to Portfolio Home
+          &larr; Return to KNT Home
         </a>
       </div>
     </main>

@@ -37,8 +37,8 @@ describe('ProjectCardComponent - Button Logic Specification', () => {
 
     const element: HTMLElement = fixture.nativeElement;
     expect(element.textContent).toContain('Live Demo');
-    expect(element.textContent).not.toContain('View Repository');
-    expect(element.textContent).not.toContain('Private Project');
+    expect(element.textContent).not.toContain('Codebase');
+    expect(element.textContent).not.toContain('Enterprise Client System');
   });
 
   it('Scenario 2: demoUrl ONLY -> shows "Live Demo"', () => {
@@ -52,10 +52,10 @@ describe('ProjectCardComponent - Button Logic Specification', () => {
 
     const element: HTMLElement = fixture.nativeElement;
     expect(element.textContent).toContain('Live Demo');
-    expect(element.textContent).not.toContain('View Repository');
+    expect(element.textContent).not.toContain('Codebase');
   });
 
-  it('Scenario 3: public repoUrl ONLY -> shows "View Repository"', () => {
+  it('Scenario 3: public repoUrl ONLY -> shows "Codebase"', () => {
     component.project = {
       ...baseProject,
       demoUrl: undefined,
@@ -65,12 +65,12 @@ describe('ProjectCardComponent - Button Logic Specification', () => {
     fixture.detectChanges();
 
     const element: HTMLElement = fixture.nativeElement;
-    expect(element.textContent).toContain('View Repository');
+    expect(element.textContent).toContain('Codebase');
     expect(element.textContent).not.toContain('Live Demo');
-    expect(element.textContent).not.toContain('Private Project');
+    expect(element.textContent).not.toContain('Enterprise Client System');
   });
 
-  it('Scenario 4: Neither demoUrl nor public repoUrl -> displays "Private Project"', () => {
+  it('Scenario 4: Neither demoUrl nor public repoUrl -> displays "Enterprise Client System"', () => {
     component.project = {
       ...baseProject,
       demoUrl: undefined,
@@ -80,8 +80,8 @@ describe('ProjectCardComponent - Button Logic Specification', () => {
     fixture.detectChanges();
 
     const element: HTMLElement = fixture.nativeElement;
-    expect(element.textContent).toContain('Private Project');
+    expect(element.textContent).toContain('Enterprise Client System');
     expect(element.textContent).not.toContain('Live Demo');
-    expect(element.textContent).not.toContain('View Repository');
+    expect(element.textContent).not.toContain('Codebase');
   });
 });

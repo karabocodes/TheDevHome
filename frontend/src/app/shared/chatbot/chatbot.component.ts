@@ -1,4 +1,4 @@
-import { Component, inject, ViewChild, ElementRef, AfterViewChecked, signal } from '@angular/core';
+import { Component, inject, ViewChild, ElementRef, AfterViewChecked } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ChatStateService } from '../../core/services/chat-state.service';
@@ -15,13 +15,13 @@ import { ChatStateService } from '../../core/services/chat-state.service';
           type="button"
           (click)="chatService.toggleOpen()"
           class="group flex items-center gap-3 px-4 py-3 rounded-full bg-brand-600 hover:bg-brand-500 text-white font-medium shadow-2xl shadow-brand-500/25 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-brand-500/30"
-          aria-label="Open AI portfolio assistant"
+          aria-label="Open KNT Technical AI Consultant"
         >
           <span class="relative flex h-3 w-3">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
             <span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
           </span>
-          <span class="text-sm font-semibold tracking-wide">Ask Portfolio AI</span>
+          <span class="text-sm font-semibold tracking-wide">Consult KNT AI</span>
           <svg class="w-5 h-5 group-hover:rotate-12 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
           </svg>
@@ -32,7 +32,7 @@ import { ChatStateService } from '../../core/services/chat-state.service';
     <!-- Chat Modal / Drawer -->
     @if (chatService.isOpen()) {
       <div
-        class="fixed bottom-6 right-6 z-50 w-full max-w-[420px] h-[580px] max-h-[90vh] bg-surface-900 border border-surface-700/80 rounded-2xl shadow-2xl flex flex-col overflow-hidden animate-in slide-in-from-bottom-5 duration-200"
+        class="fixed bottom-6 right-6 z-50 w-full max-w-[440px] h-[600px] max-h-[90vh] bg-surface-900 border border-surface-700/80 rounded-2xl shadow-2xl flex flex-col overflow-hidden animate-in slide-in-from-bottom-5 duration-200"
         role="dialog"
         aria-labelledby="chat-title"
         aria-modal="false"
@@ -40,14 +40,12 @@ import { ChatStateService } from '../../core/services/chat-state.service';
         <!-- Chat Header -->
         <header class="px-5 py-4 bg-surface-950 border-b border-surface-800 flex items-center justify-between">
           <div class="flex items-center gap-3">
-            <div class="w-8 h-8 rounded-lg bg-brand-500/10 border border-brand-500/30 flex items-center justify-center text-brand-400">
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
+            <div class="w-9 h-9 rounded-lg bg-brand-500/10 border border-brand-500/30 flex items-center justify-center text-brand-400 font-mono font-bold text-sm">
+              KNT
             </div>
             <div>
               <h2 id="chat-title" class="text-sm font-bold text-white leading-tight">
-                Portfolio Technical Assistant
+                KNT Solutions Advisory Assistant
               </h2>
               <div class="flex items-center gap-1.5 mt-0.5">
                 <span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>
@@ -55,7 +53,7 @@ import { ChatStateService } from '../../core/services/chat-state.service';
                   @if (chatService.contextService.currentContext(); as ctx) {
                     Scoped: <strong class="text-brand-300">{{ ctx.title }}</strong>
                   } @else {
-                    Global Portfolio Scope
+                    KNT Enterprise Scope
                   }
                 </span>
               </div>
@@ -124,7 +122,7 @@ import { ChatStateService } from '../../core/services/chat-state.service';
                 <span class="w-2 h-2 rounded-full bg-brand-400 animate-bounce"></span>
                 <span class="w-2 h-2 rounded-full bg-brand-400 animate-bounce [animation-delay:0.2s]"></span>
                 <span class="w-2 h-2 rounded-full bg-brand-400 animate-bounce [animation-delay:0.4s]"></span>
-                <span class="ml-2 text-xs font-mono text-surface-400">Consulting portfolio knowledge...</span>
+                <span class="ml-2 text-xs font-mono text-surface-400">Consulting KNT architectural knowledge...</span>
               </div>
             </div>
           }
@@ -167,17 +165,24 @@ import { ChatStateService } from '../../core/services/chat-state.service';
           } @else {
             <button
               type="button"
-              (click)="sendQuickPrompt('Which projects use Java and Spring Boot?')"
+              (click)="sendQuickPrompt('What core services does KNT offer?')"
               class="shrink-0 px-2.5 py-1 rounded-full bg-surface-800 hover:bg-surface-700 text-surface-300 hover:text-white text-[11px] font-mono border border-surface-700/50 transition-colors"
             >
-              Java/Spring projects?
+              KNT Services?
             </button>
             <button
               type="button"
-              (click)="sendQuickPrompt('Which project uses Angular 20?')"
+              (click)="sendQuickPrompt('Who are the KNT founding partners?')"
               class="shrink-0 px-2.5 py-1 rounded-full bg-surface-800 hover:bg-surface-700 text-surface-300 hover:text-white text-[11px] font-mono border border-surface-700/50 transition-colors"
             >
-              Angular 20 app?
+              Founding Partners?
+            </button>
+            <button
+              type="button"
+              (click)="sendQuickPrompt('How do we engage KNT for an enterprise project?')"
+              class="shrink-0 px-2.5 py-1 rounded-full bg-surface-800 hover:bg-surface-700 text-surface-300 hover:text-white text-[11px] font-mono border border-surface-700/50 transition-colors"
+            >
+              Engagement models?
             </button>
           }
         </div>
@@ -188,7 +193,7 @@ import { ChatStateService } from '../../core/services/chat-state.service';
             type="text"
             [(ngModel)]="inputText"
             name="chatInput"
-            placeholder="Ask about Karabo's projects..."
+            placeholder="Ask about KNT services, architecture, or partners..."
             [disabled]="chatService.status() === 'loading'"
             class="flex-1 bg-surface-900 border border-surface-700 text-white placeholder-surface-500 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 disabled:opacity-50"
             autocomplete="off"

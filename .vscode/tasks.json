@@ -51,6 +51,17 @@
       },
       "isBackground": true,
       "problemMatcher": []
-    }
+    },
+    {
+  "label": "Start Dev Servers (All)",
+  "dependsOn": [
+    "Backend: FastAPI",
+    "Frontend: ng serve"
+  ],
+  "runOptions": {
+    "runOn": "folderOpen"
+  },
+  "problemMatcher": []
+}
   ]
 }

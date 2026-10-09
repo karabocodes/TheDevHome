@@ -22,11 +22,11 @@ describe('AppComponent Shell', () => {
     expect(app).toBeTruthy();
   });
 
-  it('should render the developer branding in header', () => {
+  it('should render the KNT corporate branding in header', () => {
     const fixture = TestBed.createComponent(App);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('header')?.textContent).toContain('Karabo Khunou');
+    expect(compiled.querySelector('header')?.textContent).toContain('KNT');
   });
 
   it('should include the persistent chatbot overlay', () => {
